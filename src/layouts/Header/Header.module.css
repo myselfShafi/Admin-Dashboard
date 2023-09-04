@@ -1,0 +1,47 @@
+.header {
+    grid-area: header;
+    background-color: #053B50;
+    color: aliceblue;
+align-items: center;
+justify-content: space-between;
+display: flex;
+padding: 0 20px;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+column-gap: 25px;
+list-style: none;
+cursor: pointer;
+}
+
+.link {
+    font-size: 25px;
+    transition: transform .5s ease;
+}
+
+.link:hover {
+    color: #D5FFE4;
+    transform: scale(1.25);
+}
+
+.expand {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .header h2 span {
+        display: none;
+    }
+    .expand {
+        display: block;
+    }
+  }
+
